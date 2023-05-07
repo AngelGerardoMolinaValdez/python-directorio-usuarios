@@ -1,54 +1,55 @@
-# ***Directorio De Usuarios***
+# ***Sistema de Gestión de Clientes***
 
-Proyecto realizado a inicios de mi carrera en el desarrollo de software.
+Este archivo describe el proyecto y proporciona instrucciones para ejecutar la aplicación.
 
-El script permite dar de alta usuarios, consutarlos, modificarlos y consulta general del directorio.
 
-Permite dar de alta usuario, baja de usuarios, modificacion de usuarios, tambien consulta general de los usuarios y consulta especifica
+# ***Descripción general***
+
+El "Sistema de Gestión de Clientes" es una aplicación de línea de comandos que permite a un usuario gestionar los clientes de una empresa. El usuario puede agregar, eliminar y actualizar información de los clientes, y también puede ver una lista de todos los clientes existentes.
+
+La aplicación consta de cuatro componentes principales:
+
+- `model`: define la estructura de datos de un cliente y proporciona funciones para agregar, eliminar y actualizar clientes.
+- `inputs`: proporciona funciones para obtener información de los usuarios, como el nombre y la dirección de un nuevo cliente.
+- `errors`: define excepciones personalizadas que se lanzan cuando se producen errores durante la ejecución de la aplicación.
+- `main`: contiene la lógica principal de la aplicación, como el bucle principal que muestra el menú de opciones y maneja las entradas del usuario.
 
 
 # ***Requisitos***
-## ***Requerimientos***
-Al momento de crear este proyecto fueron usados los siguientes componentes:
 
-- [Python](https://www.python.org/downloads/) (3.9)
+- [Python](https://www.python.org/downloads/) (3.11)
 - [prettytable](https://pypi.org/project/prettytable/)
 - [pyfiglet](https://pypi.org/project/pyfiglet/)
 
 
-# ***Instalacion***
-
-Primero debemos instalar Python. [Clic aqui para tutorial rapido de como instalar Python](https://tutorial.djangogirls.org/es/python_installation/)
-
-Para comprobar que se ha instalado correctamente, abrir una consola de comandos y ejecutar lo
-siguiente:
-
-- `python --version`
-
-Si se instalo correctamente, apareca algo similar a la siguiente imagen:
-
-![](./assets/output_python_version.PNG)
-
-Una vez hecho esto procederemos a instalar las extensiones necesarias para que funcione el proyecto, para esto es necesario abrir una consola de comandos y ejecutar las siguientes lineas:
+## ***Instalación***
 
 - `pip install prettytable`
+
+
 - `pip install pyfiglet`
 
-Tambien es posible instalarlos en una sola linea:
+Para instalar python:
+- [Mac](https://docs.python.org/es/3/using/mac.html)
+- [Linux](https://docs.python.org/es/3/using/unix.html)
+- [Windows](https://docs.python.org/es/3/using/windows.html)
 
-- `pip install prettytable pyfiglet`
+
+# ***Ejecutar la aplicación***
+
+Para ejecutar la aplicación, ejecute el archivo `main.py` en la línea de comandos.
+
+```sh
+python main.py
+```
+
+Esto mostrará un menú de opciones al usuario, donde puede seleccionar una acción para realizar.
 
 
-# Ejecucion
-Para ejecutar este proyecto ejecute el siguiente comando en una consola de comandos ubicada en la carpeta donde se encuentre el archivo:
+# ***Ejecutar pruebas***
 
-- `python main.py`
+Las pruebas unitarias para la aplicación se encuentran en el directorio `tests`. Para ejecutar las pruebas, ejecute cada archivo de prueba utilizando el siguiente comando:
 
-o
-
-- `py main.py`
-
-Una vez hecho esto si todo esta configurado correctamente se podra
-visualizar el menu principal:
-
-![](./assets/menu_principal.png)
+```sh
+python test_suite.py
+```
